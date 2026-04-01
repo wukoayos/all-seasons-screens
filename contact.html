@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — All Seasons Screens & Blinds | Free Quote Brisbane</title>
+  <meta name="description" content="Get a free measure and quote from All Seasons Screens & Blinds. Security screens, fly screens, Crimsafe and blinds in Brisbane's Redlands and south-east suburbs.">
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0B1120',
+            'primary-light': '#1E293B',
+            secondary: '#2563EB',
+            'secondary-light': '#3B82F6',
+            accent: '#F59E0B',
+            'accent-light': '#FBBF24',
+            'bg-main': '#F8FAFC',
+            'bg-alt': '#F1F5F9',
+            surface: '#FFFFFF',
+            'text-main': '#0F172A',
+            'text-light': '#64748B',
+            steel: '#475569',
+          },
+          fontFamily: { heading: ['Inter', 'system-ui', 'sans-serif'], body: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: #0F172A; background-color: #F8FAFC; }
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+  <!-- Top Bar -->
+  <div id="top-bar" class="bg-primary text-white text-center py-2.5 text-sm font-semibold fixed top-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-center gap-3 flex-wrap">
+      <span class="inline-flex items-center gap-1.5"><i data-lucide="shield" class="w-4 h-4 text-accent"></i> 25+ Years Protecting Brisbane Homes</span>
+      <span class="hidden sm:inline text-white/40">|</span>
+      <span class="inline-flex items-center gap-1.5"><i data-lucide="ruler" class="w-4 h-4 text-secondary"></i> Free Measure &amp; Quote</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="main-nav" class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <img src="logo.png" alt="All Seasons Screens" class="h-14 w-auto rounded-lg">
+          <div class="flex flex-col">
+            <span class="text-xl font-extrabold text-primary leading-tight">All Seasons <span class="text-secondary">Screens</span></span>
+            <span class="text-[10px] font-medium text-text-light tracking-wider uppercase leading-tight">Screens &bull; Blinds &bull; Security</span>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="text-text-main font-medium hover:text-secondary transition-colors">Home</a>
+          <a href="services.html" class="text-text-main font-medium hover:text-secondary transition-colors">Services</a>
+          <a href="contact.html" class="text-secondary font-semibold">Contact</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6 text-text-main"></i></button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <div class="px-4 py-4 space-y-3">
+        <a href="index.html" class="block py-2 text-text-main font-medium hover:text-secondary">Home</a>
+        <a href="services.html" class="block py-2 text-text-main font-medium hover:text-secondary">Services</a>
+        <a href="contact.html" class="block py-2 text-secondary font-semibold">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="page-main">
+
+    <!-- Page Header -->
+    <section class="py-16 md:py-20 bg-primary text-white text-center">
+      <div class="max-w-4xl mx-auto px-4">
+        <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">Free Measure &amp; Quote</h1>
+        <p class="text-blue-200/80 text-lg max-w-2xl mx-auto">Tell us what you need and we'll come to you with a free, no-obligation quote.</p>
+      </div>
+    </section>
+
+    <!-- Contact Form + Info -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
+
+          <!-- Form -->
+          <div class="lg:col-span-3 fade-up">
+            <div class="bg-bg-main rounded-2xl p-8 border border-gray-100">
+              <h2 class="text-2xl font-bold text-text-main mb-6">Request a Quote</h2>
+              <form class="space-y-5" onsubmit="event.preventDefault(); document.getElementById('form-success').classList.remove('hidden'); this.classList.add('hidden');">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label class="block text-sm font-medium text-text-main mb-1.5">Name *</label>
+                    <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all" placeholder="Your name">
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-text-main mb-1.5">Phone *</label>
+                    <input type="tel" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all" placeholder="Your phone number">
+                  </div>
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-text-main mb-1.5">Email</label>
+                  <input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all" placeholder="Your email (optional)">
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-text-main mb-1.5">What do you need? *</label>
+                  <select required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all bg-white">
+                    <option value="">Select a product...</option>
+                    <option>Security Door</option>
+                    <option>Fly Screen Door</option>
+                    <option>Fly Screen Window</option>
+                    <option>Crimsafe Door/Window</option>
+                    <option>Security Mesh Screen</option>
+                    <option>Blinds</option>
+                    <option>Rescreening / Repair</option>
+                    <option>Multiple Products</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-text-main mb-1.5">Suburb</label>
+                  <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all" placeholder="Your suburb">
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-text-main mb-1.5">Details</label>
+                  <textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all resize-none" placeholder="Tell us more about what you need (e.g. number of doors/windows, sizes, style preferences)..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-secondary hover:bg-secondary-light text-white py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center justify-center gap-2 shadow-lg shadow-secondary/20">
+                  <i data-lucide="send" class="w-5 h-5"></i>
+                  Request Free Quote
+                </button>
+              </form>
+              <div id="form-success" class="hidden text-center py-12">
+                <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <i data-lucide="check-circle" class="w-8 h-8 text-secondary"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-text-main mb-2">Quote Request Sent!</h3>
+                <p class="text-text-light">Thanks for reaching out. We'll be in touch shortly to arrange your free measure and quote.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="lg:col-span-2 fade-up">
+            <div class="space-y-6">
+              <div>
+                <h3 class="text-xl font-bold text-text-main mb-4">Contact Information</h3>
+                <div class="space-y-4">
+                  <a href="mailto:allseasonsscreens@bigpond.com" class="flex items-center gap-4 p-4 rounded-xl bg-bg-main hover:bg-bg-alt transition-colors group border border-gray-100">
+                    <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-secondary/20 transition-colors">
+                      <i data-lucide="mail" class="w-6 h-6 text-secondary"></i>
+                    </div>
+                    <div>
+                      <p class="font-semibold text-text-main">Email</p>
+                      <p class="text-text-light text-sm">allseasonsscreens@bigpond.com</p>
+                    </div>
+                  </a>
+                  <div class="flex items-center gap-4 p-4 rounded-xl bg-bg-main border border-gray-100">
+                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+                      <i data-lucide="map-pin" class="w-6 h-6 text-primary"></i>
+                    </div>
+                    <div>
+                      <p class="font-semibold text-text-main">Location</p>
+                      <p class="text-text-light text-sm">Capalaba, QLD 4157</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-4 p-4 rounded-xl bg-bg-main border border-gray-100">
+                    <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center shrink-0">
+                      <i data-lucide="ruler" class="w-6 h-6 text-steel"></i>
+                    </div>
+                    <div>
+                      <p class="font-semibold text-text-main">Free Measure &amp; Quote</p>
+                      <p class="text-text-light text-sm">We come to you — no obligation</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Trust Badges -->
+              <div class="bg-bg-main rounded-2xl p-6 border border-gray-100">
+                <h4 class="font-bold text-text-main mb-4">Why Trust All Seasons</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center gap-3">
+                    <i data-lucide="calendar-check" class="w-5 h-5 text-accent shrink-0"></i>
+                    <span class="text-sm text-text-light">25+ years in the industry</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <i data-lucide="shield-check" class="w-5 h-5 text-secondary shrink-0"></i>
+                    <span class="text-sm text-text-light">Crimsafe products available</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-steel shrink-0"></i>
+                    <span class="text-sm text-text-light">Local Brisbane — Redlands based</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <i data-lucide="file-check" class="w-5 h-5 text-secondary shrink-0"></i>
+                    <span class="text-sm text-text-light">ABN 28 929 253 611 — GST registered</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="bg-bg-alt">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28260.5!2d153.19!3d-27.53!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915f90e3e4c18f%3A0x502a35af3debe40!2sCapalaba%20QLD%204157!5e0!3m2!1sen!2sau!4v1" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="All Seasons Screens service area — Capalaba, QLD"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#070D1A] text-[#94A3B8] pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div>
+          <a href="index.html" class="flex items-center gap-3 mb-4">
+            <div class="bg-white rounded-lg p-1.5 shrink-0">
+              <img src="logo.png" alt="All Seasons Screens" class="h-10 w-auto">
+            </div>
+            <span class="text-lg font-bold text-white">All Seasons <span class="text-secondary">Screens</span></span>
+          </a>
+          <p class="text-sm leading-relaxed">Brisbane's trusted security screen and blinds specialist. Over 25 years protecting homes.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Products</h4>
+          <ul class="space-y-2 text-sm"><li>Security Doors</li><li>Fly Screens</li><li>Crimsafe</li><li>Blinds</li><li>Repairs & Rescreening</li></ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contact</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-secondary"></i><a href="mailto:allseasonsscreens@bigpond.com" class="hover:text-white transition-colors">allseasonsscreens@bigpond.com</a></li>
+            <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i>Capalaba, QLD 4157</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-[#64748B]">
+        <p>&copy; 2026 All Seasons Screens & Blinds. All rights reserved.</p>
+        <p>ABN 28 929 253 611</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    function adjustNav() {
+      const bar = document.getElementById('top-bar');
+      const nav = document.getElementById('main-nav');
+      const main = document.getElementById('page-main');
+      if (bar && nav) { const h = bar.offsetHeight; nav.style.top = h + 'px'; if (main) main.style.paddingTop = (h + 80) + 'px'; }
+    }
+    adjustNav(); window.addEventListener('resize', adjustNav);
+  </script>
+</body>
+</html>
