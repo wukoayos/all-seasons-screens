@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — All Seasons Screens & Blinds | Free Quote Brisbane</title>
   <meta name="description" content="Get a free measure and quote from All Seasons Screens & Blinds. Security screens, fly screens, Crimsafe and blinds in Brisbane's Redlands and south-east suburbs.">
+  <meta property="og:title" content="Free Measure & Quote — All Seasons Screens & Blinds | Brisbane">
+  <meta property="og:description" content="Get a free, no-obligation quote for security screens, fly screens, Crimsafe and blinds. Serving Brisbane Redlands & SE suburbs.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:url" content="https://allseasonsscreens.com.au/contact.html">
+  <meta property="og:site_name" content="All Seasons Screens & Blinds">
+  <meta property="og:image" content="https://allseasonsscreens.com.au/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Quote — All Seasons Screens & Blinds Brisbane">
+  <meta name="twitter:description" content="Free measure and quote for security screens, fly screens, Crimsafe and blinds in Brisbane.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://allseasonsscreens.com.au/contact.html">
   <link rel="icon" type="image/png" href="logo.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,6 +48,56 @@
     }
   </script>
   <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://allseasonsscreens.com.au/" },
+      { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://allseasonsscreens.com.au/contact.html" }
+    ]
+  }
+  </script>
+
+  <!-- LocalBusiness + ContactPoint Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "All Seasons Screens & Blinds",
+    "url": "https://allseasonsscreens.com.au",
+    "email": "allseasonsscreens@bigpond.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Capalaba",
+      "addressRegion": "QLD",
+      "postalCode": "4157",
+      "addressCountry": "AU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -27.5339,
+      "longitude": 153.1919
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "email": "allseasonsscreens@bigpond.com",
+      "availableLanguage": "English",
+      "areaServed": { "@type": "State", "name": "Queensland" }
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Brisbane" },
+      { "@type": "City", "name": "Capalaba" },
+      { "@type": "City", "name": "Cleveland" },
+      { "@type": "City", "name": "Wynnum" },
+      { "@type": "City", "name": "Redland Bay" }
+    ]
+  }
+  </script>
+
   <style>
     html { scroll-behavior: smooth; }
     body { font-family: 'Inter', system-ui, sans-serif; color: #0F172A; background-color: #F8FAFC; }
@@ -57,17 +119,17 @@
   <nav id="main-nav" class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full z-40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="flex items-center gap-3 group">
-          <img src="logo.png" alt="All Seasons Screens" class="h-14 w-auto rounded-lg">
-          <div class="flex flex-col">
-            <span class="text-xl font-extrabold text-primary leading-tight">All Seasons <span class="text-secondary">Screens</span></span>
-            <span class="text-[10px] font-medium text-text-light tracking-wider uppercase leading-tight">Screens &bull; Blinds &bull; Security</span>
-          </div>
+        <a href="index.html" class="flex items-center group">
+          <img src="logo.png" alt="All Seasons Screens \&amp; Blinds" class="h-14 w-auto">
         </a>
         <div class="hidden md:flex items-center gap-8">
           <a href="index.html" class="text-text-main font-medium hover:text-secondary transition-colors">Home</a>
           <a href="services.html" class="text-text-main font-medium hover:text-secondary transition-colors">Services</a>
-          <a href="contact.html" class="text-secondary font-semibold">Contact</a>
+          <a href="areas.html" class="text-text-main font-medium hover:text-secondary transition-colors">Areas</a>
+        </div>
+        <div class="hidden md:flex items-center gap-4">
+          <a href="tel:0409051727" class="flex items-center gap-2 text-steel font-medium hover:text-secondary transition-colors"><i data-lucide="phone" class="w-5 h-5"></i>0409 051 727</a>
+          <a href="contact.html" class="bg-secondary hover:bg-secondary-light text-white px-5 py-2.5 rounded-lg font-semibold transition-colors">Free Quote</a>
         </div>
         <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6 text-text-main"></i></button>
       </div>
@@ -76,7 +138,8 @@
       <div class="px-4 py-4 space-y-3">
         <a href="index.html" class="block py-2 text-text-main font-medium hover:text-secondary">Home</a>
         <a href="services.html" class="block py-2 text-text-main font-medium hover:text-secondary">Services</a>
-        <a href="contact.html" class="block py-2 text-secondary font-semibold">Contact</a>
+        <a href="areas.html" class="block py-2 text-text-main font-medium hover:text-secondary">Areas</a>
+        <a href="contact.html" class="block bg-secondary text-white text-center py-3 rounded-lg font-semibold mt-3">Free Quote</a>
       </div>
     </div>
   </nav>
@@ -100,24 +163,24 @@
           <div class="lg:col-span-3 fade-up">
             <div class="bg-bg-main rounded-2xl p-8 border border-gray-100">
               <h2 class="text-2xl font-bold text-text-main mb-6">Request a Quote</h2>
-              <form class="space-y-5" onsubmit="event.preventDefault(); document.getElementById('form-success').classList.remove('hidden'); this.classList.add('hidden');">
+              <form id="contact-form" class="space-y-5" novalidate>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label class="block text-sm font-medium text-text-main mb-1.5">Name *</label>
-                    <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all" placeholder="Your name">
+                    <label for="name" class="block text-sm font-medium text-text-main mb-1.5">Name *</label>
+                    <input id="name" type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all" placeholder="Your name">
                   </div>
                   <div>
-                    <label class="block text-sm font-medium text-text-main mb-1.5">Phone *</label>
-                    <input type="tel" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all" placeholder="Your phone number">
+                    <label for="phone" class="block text-sm font-medium text-text-main mb-1.5">Phone *</label>
+                    <input id="phone" type="tel" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all" placeholder="Your phone number">
                   </div>
                 </div>
                 <div>
-                  <label class="block text-sm font-medium text-text-main mb-1.5">Email</label>
-                  <input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all" placeholder="Your email (optional)">
+                  <label for="email" class="block text-sm font-medium text-text-main mb-1.5">Email</label>
+                  <input id="email" type="email" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all" placeholder="Your email (optional)">
                 </div>
                 <div>
-                  <label class="block text-sm font-medium text-text-main mb-1.5">What do you need? *</label>
-                  <select required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all bg-white">
+                  <label for="product" class="block text-sm font-medium text-text-main mb-1.5">What do you need? *</label>
+                  <select id="product" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all bg-white">
                     <option value="">Select a product...</option>
                     <option>Security Door</option>
                     <option>Fly Screen Door</option>
@@ -131,24 +194,40 @@
                   </select>
                 </div>
                 <div>
-                  <label class="block text-sm font-medium text-text-main mb-1.5">Suburb</label>
-                  <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all" placeholder="Your suburb">
+                  <label for="suburb" class="block text-sm font-medium text-text-main mb-1.5">Suburb</label>
+                  <input id="suburb" type="text" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all" placeholder="Your suburb">
                 </div>
                 <div>
-                  <label class="block text-sm font-medium text-text-main mb-1.5">Details</label>
-                  <textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all resize-none" placeholder="Tell us more about what you need (e.g. number of doors/windows, sizes, style preferences)..."></textarea>
+                  <label for="details" class="block text-sm font-medium text-text-main mb-1.5">Details</label>
+                  <textarea id="details" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-all resize-none" placeholder="Tell us more about what you need (e.g. number of doors/windows, sizes, style preferences)..."></textarea>
                 </div>
                 <button type="submit" class="w-full bg-secondary hover:bg-secondary-light text-white py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center justify-center gap-2 shadow-lg shadow-secondary/20">
                   <i data-lucide="send" class="w-5 h-5"></i>
                   Request Free Quote
                 </button>
               </form>
-              <div id="form-success" class="hidden text-center py-12">
-                <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <i data-lucide="check-circle" class="w-8 h-8 text-secondary"></i>
+
+              <!-- Send Options (hidden until form submitted) -->
+              <div id="form-success" class="hidden mt-6 p-6 bg-secondary/5 border border-secondary/15 rounded-xl">
+                <div class="flex items-start gap-3">
+                  <i data-lucide="mail" class="w-6 h-6 text-secondary mt-0.5 shrink-0"></i>
+                  <div class="w-full">
+                    <p class="font-semibold text-text-main mb-1">One more step — send your quote request</p>
+                    <p class="text-sm text-text-light mb-4">Your details have been prepared. Choose how you'd like to send them to us:</p>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                      <a id="send-gmail" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-secondary hover:bg-secondary-light text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors">
+                        <i data-lucide="mail" class="w-4 h-4"></i> Open in Gmail
+                      </a>
+                      <a id="send-outlook" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-[#0078D4] hover:bg-[#106EBE] text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors">
+                        <i data-lucide="mail" class="w-4 h-4"></i> Open in Outlook
+                      </a>
+                      <a id="send-mailto" href="#" class="inline-flex items-center justify-center gap-2 bg-steel hover:bg-primary text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors">
+                        <i data-lucide="mail" class="w-4 h-4"></i> Other Email App
+                      </a>
+                    </div>
+                    <p class="text-xs text-text-light mt-3">Or call us directly: <a href="tel:0409051727" class="text-secondary font-semibold">0409 051 727</a></p>
+                  </div>
                 </div>
-                <h3 class="text-2xl font-bold text-text-main mb-2">Quote Request Sent!</h3>
-                <p class="text-text-light">Thanks for reaching out. We'll be in touch shortly to arrange your free measure and quote.</p>
               </div>
             </div>
           </div>
@@ -159,6 +238,15 @@
               <div>
                 <h3 class="text-xl font-bold text-text-main mb-4">Contact Information</h3>
                 <div class="space-y-4">
+                  <a href="tel:0409051727" class="flex items-center gap-4 p-4 rounded-xl bg-bg-main hover:bg-bg-alt transition-colors group border border-gray-100">
+                    <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-accent/20 transition-colors">
+                      <i data-lucide="phone" class="w-6 h-6 text-accent"></i>
+                    </div>
+                    <div>
+                      <p class="font-semibold text-text-main">Call Us</p>
+                      <p class="text-text-light text-sm">0409 051 727</p>
+                    </div>
+                  </a>
                   <a href="mailto:allseasonsscreens@bigpond.com" class="flex items-center gap-4 p-4 rounded-xl bg-bg-main hover:bg-bg-alt transition-colors group border border-gray-100">
                     <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-secondary/20 transition-colors">
                       <i data-lucide="mail" class="w-6 h-6 text-secondary"></i>
@@ -233,10 +321,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
         <div>
           <a href="index.html" class="flex items-center gap-3 mb-4">
-            <div class="bg-white rounded-lg p-1.5 shrink-0">
-              <img src="logo.png" alt="All Seasons Screens" class="h-10 w-auto">
-            </div>
-            <span class="text-lg font-bold text-white">All Seasons <span class="text-secondary">Screens</span></span>
+            <img src="logo.png" alt="All Seasons Screens \&amp; Blinds" class="h-10 w-auto rounded-lg bg-white p-1">
           </a>
           <p class="text-sm leading-relaxed">Brisbane's trusted security screen and blinds specialist. Over 25 years protecting homes.</p>
         </div>
@@ -249,12 +334,13 @@
           </ul>
         </div>
         <div>
-          <h4 class="text-white font-semibold mb-4">Products</h4>
-          <ul class="space-y-2 text-sm"><li>Security Doors</li><li>Fly Screens</li><li>Crimsafe</li><li>Blinds</li><li>Repairs & Rescreening</li></ul>
+          <h4 class="text-white font-semibold mb-4">Services</h4>
+          <ul class="space-y-2 text-sm"><li><a href="security-doors.html" class="hover:text-white transition-colors">Security Doors</a></li><li><a href="fly-screens.html" class="hover:text-white transition-colors">Fly Screens</a></li><li><a href="crimsafe.html" class="hover:text-white transition-colors">Crimsafe</a></li><li><a href="blinds.html" class="hover:text-white transition-colors">Blinds</a></li><li><a href="repairs.html" class="hover:text-white transition-colors">Repairs &amp; Rescreening</a></li></ul>
         </div>
         <div>
           <h4 class="text-white font-semibold mb-4">Contact</h4>
           <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-secondary"></i><a href="tel:0409051727" class="hover:text-white transition-colors">0409 051 727</a></li>
             <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-secondary"></i><a href="mailto:allseasonsscreens@bigpond.com" class="hover:text-white transition-colors">allseasonsscreens@bigpond.com</a></li>
             <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i>Capalaba, QLD 4157</li>
           </ul>
@@ -269,13 +355,19 @@
 
   <script>
     lucide.createIcons();
+
+    // Mobile menu
     const menuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Fade-up animation
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
     }, { threshold: 0.1 });
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Nav offset
     function adjustNav() {
       const bar = document.getElementById('top-bar');
       const nav = document.getElementById('main-nav');
@@ -283,6 +375,67 @@
       if (bar && nav) { const h = bar.offsetHeight; nav.style.top = h + 'px'; if (main) main.style.paddingTop = (h + 80) + 'px'; }
     }
     adjustNav(); window.addEventListener('resize', adjustNav);
+
+    // Form validation & email compose
+    const form = document.getElementById('contact-form');
+    const success = document.getElementById('form-success');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById('name');
+      const phone = document.getElementById('phone');
+      const email = document.getElementById('email');
+      const product = document.getElementById('product');
+      const suburb = document.getElementById('suburb');
+      const details = document.getElementById('details');
+
+      // Validate required fields
+      let valid = true;
+      [name, phone, product].forEach(field => {
+        if (!field.value.trim()) {
+          field.classList.add('border-red-400');
+          valid = false;
+        } else {
+          field.classList.remove('border-red-400');
+        }
+      });
+
+      if (email.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+        email.classList.add('border-red-400');
+        valid = false;
+      } else {
+        email.classList.remove('border-red-400');
+      }
+
+      if (valid) {
+        const to = 'allseasonsscreens@bigpond.com';
+        const productText = product.options[product.selectedIndex].text;
+        const subjectText = 'Quote Request: ' + productText + (suburb.value ? ' — ' + suburb.value : '');
+        const bodyText = 'Name: ' + name.value
+          + '\nPhone: ' + phone.value
+          + '\nEmail: ' + (email.value || 'Not provided')
+          + '\nProduct: ' + productText
+          + '\nSuburb: ' + (suburb.value || 'Not provided')
+          + '\n\nDetails:\n' + (details.value || 'No additional details');
+
+        // Gmail compose URL
+        document.getElementById('send-gmail').href =
+          'https://mail.google.com/mail/?view=cm&to=' + encodeURIComponent(to) + '&su=' + encodeURIComponent(subjectText) + '&body=' + encodeURIComponent(bodyText);
+
+        // Outlook web compose URL
+        document.getElementById('send-outlook').href =
+          'https://outlook.live.com/mail/0/deeplink/compose?to=' + encodeURIComponent(to) + '&subject=' + encodeURIComponent(subjectText) + '&body=' + encodeURIComponent(bodyText);
+
+        // Fallback mailto
+        document.getElementById('send-mailto').href =
+          'mailto:' + to + '?subject=' + encodeURIComponent(subjectText) + '&body=' + encodeURIComponent(bodyText);
+
+        form.style.display = 'none';
+        success.classList.remove('hidden');
+        lucide.createIcons();
+      }
+    });
   </script>
 </body>
 </html>

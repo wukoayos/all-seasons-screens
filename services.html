@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products & Services — All Seasons Screens & Blinds | Brisbane</title>
   <meta name="description" content="Security doors, fly screens, Crimsafe, aluminium mesh, blinds and rescreening services. Quality products installed by Brisbane's trusted screen specialists.">
+  <meta property="og:title" content="Products & Services — All Seasons Screens & Blinds | Brisbane">
+  <meta property="og:description" content="Security doors, fly screens, Crimsafe, blinds and rescreening. Quality products installed by Brisbane's trusted screen specialists for 25+ years.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:url" content="https://allseasonsscreens.com.au/services.html">
+  <meta property="og:site_name" content="All Seasons Screens & Blinds">
+  <meta property="og:image" content="https://allseasonsscreens.com.au/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Security Screens, Blinds & More — All Seasons Screens Brisbane">
+  <meta name="twitter:description" content="Security doors, fly screens, Crimsafe, blinds and rescreening services in Brisbane.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://allseasonsscreens.com.au/services.html">
   <link rel="icon" type="image/png" href="logo.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,6 +48,85 @@
     }
   </script>
   <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://allseasonsscreens.com.au/" },
+      { "@type": "ListItem", "position": 2, "name": "Products & Services", "item": "https://allseasonsscreens.com.au/services.html" }
+    ]
+  }
+  </script>
+
+  <!-- Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "All Seasons Screens & Blinds — Products & Services",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Service",
+          "name": "Security Doors Brisbane",
+          "description": "Heavy-duty security doors that protect your family. Hinged and sliding options with stainless steel and aluminium mesh, triple lock systems, and custom colours.",
+          "provider": { "@type": "HomeAndConstructionBusiness", "name": "All Seasons Screens & Blinds" },
+          "areaServed": { "@type": "City", "name": "Brisbane" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Service",
+          "name": "Fly Screens Brisbane",
+          "description": "Custom-fitted fly screen doors and windows for Queensland living. Hinged, sliding, retractable, and pet-resistant mesh options available.",
+          "provider": { "@type": "HomeAndConstructionBusiness", "name": "All Seasons Screens & Blinds" },
+          "areaServed": { "@type": "City", "name": "Brisbane" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Service",
+          "name": "Crimsafe Security Screens Brisbane",
+          "description": "Australia's strongest security screen brand. Crimsafe Regular, Ultimate and Safe-S-Cape with patented Screw-Clamp technology and 10-year warranty.",
+          "provider": { "@type": "HomeAndConstructionBusiness", "name": "All Seasons Screens & Blinds" },
+          "areaServed": { "@type": "City", "name": "Brisbane" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Service",
+          "name": "Custom Blinds Brisbane",
+          "description": "Roller blinds, venetian blinds, vertical blinds, panel glides and Roman blinds. Custom measured and fitted to suit your space.",
+          "provider": { "@type": "HomeAndConstructionBusiness", "name": "All Seasons Screens & Blinds" },
+          "areaServed": { "@type": "City", "name": "Brisbane" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "Service",
+          "name": "Screen Repairs & Rescreening Brisbane",
+          "description": "Fly screen mesh replacement, security screen repairs, door roller and track repairs, lock replacements and upgrades.",
+          "provider": { "@type": "HomeAndConstructionBusiness", "name": "All Seasons Screens & Blinds" },
+          "areaServed": { "@type": "City", "name": "Brisbane" }
+        }
+      }
+    ]
+  }
+  </script>
+
   <style>
     html { scroll-behavior: smooth; }
     body { font-family: 'Inter', system-ui, sans-serif; color: #0F172A; background-color: #F8FAFC; }
@@ -57,19 +148,16 @@
   <nav id="main-nav" class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full z-40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="flex items-center gap-3 group">
-          <img src="logo.png" alt="All Seasons Screens" class="h-14 w-auto rounded-lg">
-          <div class="flex flex-col">
-            <span class="text-xl font-extrabold text-primary leading-tight">All Seasons <span class="text-secondary">Screens</span></span>
-            <span class="text-[10px] font-medium text-text-light tracking-wider uppercase leading-tight">Screens &bull; Blinds &bull; Security</span>
-          </div>
+        <a href="index.html" class="flex items-center group">
+          <img src="logo.png" alt="All Seasons Screens \&amp; Blinds" class="h-14 w-auto">
         </a>
         <div class="hidden md:flex items-center gap-8">
           <a href="index.html" class="text-text-main font-medium hover:text-secondary transition-colors">Home</a>
           <a href="services.html" class="text-secondary font-semibold">Services</a>
-          <a href="contact.html" class="text-text-main font-medium hover:text-secondary transition-colors">Contact</a>
+          <a href="areas.html" class="text-text-main font-medium hover:text-secondary transition-colors">Areas</a>
         </div>
         <div class="hidden md:flex items-center gap-4">
+          <a href="tel:0409051727" class="flex items-center gap-2 text-steel font-medium hover:text-secondary transition-colors"><i data-lucide="phone" class="w-5 h-5"></i>0409 051 727</a>
           <a href="contact.html" class="bg-secondary hover:bg-secondary-light text-white px-5 py-2.5 rounded-lg font-semibold transition-colors">Free Quote</a>
         </div>
         <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Toggle menu"><i data-lucide="menu" class="w-6 h-6 text-text-main"></i></button>
@@ -79,8 +167,8 @@
       <div class="px-4 py-4 space-y-3">
         <a href="index.html" class="block py-2 text-text-main font-medium hover:text-secondary">Home</a>
         <a href="services.html" class="block py-2 text-secondary font-semibold">Services</a>
-        <a href="contact.html" class="block py-2 text-text-main font-medium hover:text-secondary">Contact</a>
-        <a href="contact.html" class="block bg-secondary text-white text-center py-3 rounded-lg font-semibold mt-3">Free Measure &amp; Quote</a>
+        <a href="areas.html" class="block py-2 text-text-main font-medium hover:text-secondary">Areas</a>
+        <a href="contact.html" class="block bg-secondary text-white text-center py-3 rounded-lg font-semibold mt-3">Free Quote</a>
       </div>
     </div>
   </nav>
@@ -95,165 +183,84 @@
       </div>
     </section>
 
-    <!-- Service 1: Security Doors -->
-    <section class="py-16 md:py-20 bg-white">
+    <!-- Services Grid (Hub) -->
+    <section class="py-16 md:py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center fade-up">
-          <div>
-            <div class="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              <i data-lucide="door-closed" class="w-4 h-4"></i> Security Solutions
-            </div>
-            <h2 class="text-3xl font-bold text-text-main mb-4">Security Doors</h2>
-            <p class="text-text-light leading-relaxed mb-6">Heavy-duty security doors that protect your family without compromising on style. Available in hinged and sliding configurations with a wide range of colours and designs to match your home.</p>
-            <ul class="space-y-3 mb-6">
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Hinged security screen doors</span></li>
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Sliding security screen doors</span></li>
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Stainless steel &amp; aluminium mesh options</span></li>
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Triple lock security systems</span></li>
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Custom colours to match your home</span></li>
-            </ul>
-            <a href="contact.html" class="bg-secondary hover:bg-secondary-light text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-flex items-center gap-2">
-              Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </a>
-          </div>
-          <div class="rounded-2xl overflow-hidden shadow-lg bg-gradient-to-br from-primary/5 to-secondary/10 flex items-center justify-center h-80">
-            <div class="text-center p-8">
-              <i data-lucide="door-closed" class="w-20 h-20 text-primary/20 mx-auto mb-4"></i>
-              <p class="text-text-light font-medium">Security Door Installation</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 fade-up">
 
-    <!-- Service 2: Fly Screens -->
-    <section class="py-16 md:py-20 bg-bg-alt">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center fade-up">
-          <div class="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-lg bg-gradient-to-br from-secondary/5 to-primary/5 flex items-center justify-center h-80">
-            <div class="text-center p-8">
-              <i data-lucide="bug-off" class="w-20 h-20 text-secondary/20 mx-auto mb-4"></i>
-              <p class="text-text-light font-medium">Fly Screen Solutions</p>
+          <!-- Security Doors -->
+          <a href="security-doors.html" class="group bg-bg-main rounded-2xl p-8 border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-secondary/10 transition-colors">
+              <i data-lucide="lock-keyhole" class="w-8 h-8 text-primary group-hover:text-secondary transition-colors"></i>
             </div>
-          </div>
-          <div class="order-1 lg:order-2">
-            <div class="inline-flex items-center gap-2 bg-secondary/10 text-secondary px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              <i data-lucide="bug-off" class="w-4 h-4"></i> Insect Protection
-            </div>
-            <h2 class="text-3xl font-bold text-text-main mb-4">Fly Screens</h2>
-            <p class="text-text-light leading-relaxed mb-6">Let the breeze in and keep the bugs out with our custom-fitted fly screens. Perfect for Queensland living — enjoy open windows and doors all year round.</p>
-            <ul class="space-y-3 mb-6">
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Fly screen doors (hinged &amp; sliding)</span></li>
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Window fly screens</span></li>
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Retractable fly screens</span></li>
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Pet-resistant mesh options</span></li>
-            </ul>
-            <a href="contact.html" class="bg-secondary hover:bg-secondary-light text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-flex items-center gap-2">
-              Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+            <h2 class="text-xl font-bold text-text-main mb-3 group-hover:text-secondary transition-colors">Security Doors</h2>
+            <p class="text-text-light text-sm leading-relaxed mb-4">Heavy-duty hinged and sliding security doors with stainless steel mesh, triple lock systems, and custom colours.</p>
+            <span class="text-secondary font-semibold text-sm inline-flex items-center gap-1">
+              Learn more <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+            </span>
+          </a>
 
-    <!-- Service 3: Crimsafe -->
-    <section class="py-16 md:py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center fade-up">
-          <div>
-            <div class="inline-flex items-center gap-2 bg-accent/15 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              <i data-lucide="shield" class="w-4 h-4"></i> Premium Security
+          <!-- Fly Screens -->
+          <a href="fly-screens.html" class="group bg-bg-main rounded-2xl p-8 border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-secondary/20 transition-colors">
+              <i data-lucide="bug-off" class="w-8 h-8 text-secondary"></i>
             </div>
-            <h2 class="text-3xl font-bold text-text-main mb-4">Crimsafe</h2>
-            <p class="text-text-light leading-relaxed mb-6">Australia's strongest and most trusted security screen brand. Crimsafe products are tested to withstand extreme impacts, knife attacks, and jemmy bar attacks — giving your family ultimate protection.</p>
-            <ul class="space-y-3 mb-6">
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Crimsafe Regular, Ultimate &amp; Safe-S-Cape</span></li>
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Patented Screw-Clamp&trade; technology</span></li>
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Fire escape compatible options</span></li>
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">10-year warranty</span></li>
-            </ul>
-            <a href="contact.html" class="bg-secondary hover:bg-secondary-light text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-flex items-center gap-2">
-              Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </a>
-          </div>
-          <div class="rounded-2xl overflow-hidden shadow-lg bg-gradient-to-br from-accent/5 to-secondary/10 flex items-center justify-center h-80">
-            <div class="text-center p-8">
-              <i data-lucide="shield" class="w-20 h-20 text-accent/20 mx-auto mb-4"></i>
-              <p class="text-text-light font-medium">Crimsafe Security Screens</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <h2 class="text-xl font-bold text-text-main mb-3 group-hover:text-secondary transition-colors">Fly Screens</h2>
+            <p class="text-text-light text-sm leading-relaxed mb-4">Custom-fitted fly screen doors and windows. Hinged, sliding, retractable, and pet-resistant options for QLD living.</p>
+            <span class="text-secondary font-semibold text-sm inline-flex items-center gap-1">
+              Learn more <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+            </span>
+          </a>
 
-    <!-- Service 4: Blinds -->
-    <section class="py-16 md:py-20 bg-bg-alt">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center fade-up">
-          <div class="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-lg bg-gradient-to-br from-steel/5 to-secondary/5 flex items-center justify-center h-80">
-            <div class="text-center p-8">
-              <i data-lucide="blinds" class="w-20 h-20 text-steel/20 mx-auto mb-4"></i>
-              <p class="text-text-light font-medium">Custom Blinds & Window Furnishings</p>
+          <!-- Crimsafe -->
+          <a href="crimsafe.html" class="group bg-bg-main rounded-2xl p-8 border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-accent/20 transition-colors">
+              <i data-lucide="shield" class="w-8 h-8 text-accent"></i>
             </div>
-          </div>
-          <div class="order-1 lg:order-2">
-            <div class="inline-flex items-center gap-2 bg-gray-100 text-steel px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              <i data-lucide="blinds" class="w-4 h-4"></i> Window Furnishings
-            </div>
-            <h2 class="text-3xl font-bold text-text-main mb-4">Blinds</h2>
-            <p class="text-text-light leading-relaxed mb-6">Complete your home with custom blinds. We measure, supply, and install a wide range of styles to suit your decor, light control needs, and budget.</p>
-            <ul class="space-y-3 mb-6">
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Roller blinds (blockout &amp; light filtering)</span></li>
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Venetian blinds (timber &amp; aluminium)</span></li>
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Vertical blinds</span></li>
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Panel glides &amp; Roman blinds</span></li>
-            </ul>
-            <a href="contact.html" class="bg-secondary hover:bg-secondary-light text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-flex items-center gap-2">
-              Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+            <h2 class="text-xl font-bold text-text-main mb-3 group-hover:text-secondary transition-colors">Crimsafe</h2>
+            <p class="text-text-light text-sm leading-relaxed mb-4">Australia's strongest security screen. Patented Screw-Clamp technology, 10-year warranty. We're an authorised dealer.</p>
+            <span class="text-secondary font-semibold text-sm inline-flex items-center gap-1">
+              Learn more <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+            </span>
+          </a>
 
-    <!-- Service 5: Repairs -->
-    <section class="py-16 md:py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center fade-up">
-          <div>
-            <div class="inline-flex items-center gap-2 bg-steel/10 text-steel px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              <i data-lucide="wrench" class="w-4 h-4"></i> Repairs &amp; Maintenance
+          <!-- Blinds -->
+          <a href="blinds.html" class="group bg-bg-main rounded-2xl p-8 border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-secondary/10 transition-colors">
+              <i data-lucide="blinds" class="w-8 h-8 text-steel group-hover:text-secondary transition-colors"></i>
             </div>
-            <h2 class="text-3xl font-bold text-text-main mb-4">Repairs &amp; Rescreening</h2>
-            <p class="text-text-light leading-relaxed mb-6">Screens get damaged — it happens. We can repair or rescreen your existing doors and windows quickly and affordably, often saving you the cost of a full replacement.</p>
-            <ul class="space-y-3 mb-6">
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Fly screen mesh replacement</span></li>
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Security screen repairs</span></li>
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Door roller &amp; track repairs</span></li>
-              <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-secondary mt-0.5 shrink-0"></i><span class="text-text-light">Lock replacements &amp; upgrades</span></li>
-            </ul>
-            <a href="contact.html" class="bg-secondary hover:bg-secondary-light text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-flex items-center gap-2">
-              Get a Quote <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </a>
-          </div>
-          <div class="rounded-2xl overflow-hidden shadow-lg bg-gradient-to-br from-steel/5 to-primary/5 flex items-center justify-center h-80">
-            <div class="text-center p-8">
-              <i data-lucide="wrench" class="w-20 h-20 text-steel/20 mx-auto mb-4"></i>
-              <p class="text-text-light font-medium">Repairs & Rescreening</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <h2 class="text-xl font-bold text-text-main mb-3 group-hover:text-secondary transition-colors">Blinds</h2>
+            <p class="text-text-light text-sm leading-relaxed mb-4">Roller, venetian, vertical, roman, and panel glide blinds. Custom measured and fitted for every room.</p>
+            <span class="text-secondary font-semibold text-sm inline-flex items-center gap-1">
+              Learn more <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+            </span>
+          </a>
 
-    <!-- CTA -->
-    <section class="py-16 bg-primary text-white">
-      <div class="max-w-4xl mx-auto px-4 text-center fade-up">
-        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Need a Quote?</h2>
-        <p class="text-blue-200/80 text-lg mb-8">Free measure and quote on all products — no obligation</p>
-        <a href="contact.html" class="bg-secondary hover:bg-secondary-light text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center justify-center gap-2 shadow-lg shadow-secondary/30">
-          <i data-lucide="ruler" class="w-5 h-5"></i> Free Measure &amp; Quote
-        </a>
+          <!-- Repairs -->
+          <a href="repairs.html" class="group bg-bg-main rounded-2xl p-8 border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-secondary/10 transition-colors">
+              <i data-lucide="wrench" class="w-8 h-8 text-steel group-hover:text-secondary transition-colors"></i>
+            </div>
+            <h2 class="text-xl font-bold text-text-main mb-3 group-hover:text-secondary transition-colors">Repairs &amp; Rescreening</h2>
+            <p class="text-text-light text-sm leading-relaxed mb-4">Mesh replacement, lock repairs, roller fixes, and rescreening. Often cheaper than a full replacement.</p>
+            <span class="text-secondary font-semibold text-sm inline-flex items-center gap-1">
+              Learn more <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+            </span>
+          </a>
+
+          <!-- Free Quote CTA Card -->
+          <a href="contact.html" class="group bg-primary rounded-2xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-center">
+            <div class="w-16 h-16 bg-secondary/20 rounded-2xl flex items-center justify-center mb-5">
+              <i data-lucide="ruler" class="w-8 h-8 text-secondary"></i>
+            </div>
+            <h2 class="text-xl font-bold text-white mb-3">Free Measure &amp; Quote</h2>
+            <p class="text-blue-200/70 text-sm leading-relaxed mb-4">Not sure what you need? We come to you, measure up, and provide a no-obligation quote.</p>
+            <span class="text-accent font-semibold text-sm inline-flex items-center gap-1">
+              Get started <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+            </span>
+          </a>
+
+        </div>
       </div>
     </section>
   </main>
@@ -264,10 +271,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
         <div>
           <a href="index.html" class="flex items-center gap-3 mb-4">
-            <div class="bg-white rounded-lg p-1.5 shrink-0">
-              <img src="logo.png" alt="All Seasons Screens" class="h-10 w-auto">
-            </div>
-            <span class="text-lg font-bold text-white">All Seasons <span class="text-secondary">Screens</span></span>
+            <img src="logo.png" alt="All Seasons Screens \&amp; Blinds" class="h-10 w-auto rounded-lg bg-white p-1">
           </a>
           <p class="text-sm leading-relaxed">Brisbane's trusted security screen and blinds specialist. Over 25 years protecting homes.</p>
         </div>
@@ -280,12 +284,13 @@
           </ul>
         </div>
         <div>
-          <h4 class="text-white font-semibold mb-4">Products</h4>
-          <ul class="space-y-2 text-sm"><li>Security Doors</li><li>Fly Screens</li><li>Crimsafe</li><li>Blinds</li><li>Repairs & Rescreening</li></ul>
+          <h4 class="text-white font-semibold mb-4">Services</h4>
+          <ul class="space-y-2 text-sm"><li><a href="security-doors.html" class="hover:text-white transition-colors">Security Doors</a></li><li><a href="fly-screens.html" class="hover:text-white transition-colors">Fly Screens</a></li><li><a href="crimsafe.html" class="hover:text-white transition-colors">Crimsafe</a></li><li><a href="blinds.html" class="hover:text-white transition-colors">Blinds</a></li><li><a href="repairs.html" class="hover:text-white transition-colors">Repairs &amp; Rescreening</a></li></ul>
         </div>
         <div>
           <h4 class="text-white font-semibold mb-4">Contact</h4>
           <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-secondary"></i><a href="tel:0409051727" class="hover:text-white transition-colors">0409 051 727</a></li>
             <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-secondary"></i><a href="mailto:allseasonsscreens@bigpond.com" class="hover:text-white transition-colors">allseasonsscreens@bigpond.com</a></li>
             <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i>Capalaba, QLD 4157</li>
           </ul>
