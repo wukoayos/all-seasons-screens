@@ -216,13 +216,13 @@
                     <p class="font-semibold text-text-main mb-1">One more step — send your quote request</p>
                     <p class="text-sm text-text-light mb-4">Your details have been prepared. Choose how you'd like to send them to us:</p>
                     <div class="flex flex-col sm:flex-row gap-3">
-                      <a id="send-gmail" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-secondary hover:bg-secondary-light text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors">
+                      <a id="send-gmail" href="#" target="_blank" rel="noopener noreferrer" data-umami-event="quote-sent" data-umami-event-channel="gmail" class="inline-flex items-center justify-center gap-2 bg-secondary hover:bg-secondary-light text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors">
                         <i data-lucide="mail" class="w-4 h-4"></i> Open in Gmail
                       </a>
-                      <a id="send-outlook" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-[#0078D4] hover:bg-[#106EBE] text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors">
+                      <a id="send-outlook" href="#" target="_blank" rel="noopener noreferrer" data-umami-event="quote-sent" data-umami-event-channel="outlook" class="inline-flex items-center justify-center gap-2 bg-[#0078D4] hover:bg-[#106EBE] text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors">
                         <i data-lucide="mail" class="w-4 h-4"></i> Open in Outlook
                       </a>
-                      <a id="send-mailto" href="#" class="inline-flex items-center justify-center gap-2 bg-steel hover:bg-primary text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors">
+                      <a id="send-mailto" href="#" data-umami-event="quote-sent" data-umami-event-channel="mailto" class="inline-flex items-center justify-center gap-2 bg-steel hover:bg-primary text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors">
                         <i data-lucide="mail" class="w-4 h-4"></i> Other Email App
                       </a>
                     </div>
@@ -449,6 +449,14 @@
         document.getElementById('send-mailto').href =
           'mailto:' + to + '?subject=' + encodeURIComponent(subjectText) + '&body=' + encodeURIComponent(bodyText);
 
+        // umami: stamp event attrs for compose buttons (quote-sent)
+        ['send-gmail', 'send-outlook', 'send-mailto'].forEach((btnId) => {
+          const btn = document.getElementById(btnId);
+          if (btn) {
+            btn.setAttribute('data-umami-event-service', productText);
+            btn.setAttribute('data-umami-event-suburb', suburb.value || 'unknown');
+          }
+        });
         form.style.display = 'none';
         success.classList.remove('hidden');
         lucide.createIcons();
