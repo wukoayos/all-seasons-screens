@@ -10,7 +10,7 @@
 [Site:AllSeasonsScreens] -> [Identity] ::mod(
   type="HomeAndConstructionBusiness",
   name="All Seasons Screens & Blinds",
-  purpose="Supply and install security screens, fly screens, Crimsafe products, and custom blinds for residential homes",
+  purpose="Supply and install security screens, fly screens, premium stainless steel security screens, and custom blinds for residential homes",
   audience="Homeowners, Property_Managers, Landlords, Builders",
   location="Capalaba, QLD 4157, Australia",
   abn="28 929 253 611",
@@ -36,7 +36,7 @@
 
 [Site:AllSeasonsScreens] -> [Content:Services] ::mod(
   path="/services.html",
-  description="Detailed product and service listings — security doors, fly screens, Crimsafe, blinds, repairs and rescreening",
+  description="Detailed product and service listings — security doors, fly screens, stainless steel security screens, blinds, repairs and rescreening",
   type="ServiceCatalog",
   primary_keyword="security screen services Brisbane"
 )
@@ -105,10 +105,10 @@
   description="Custom-fitted fly screen doors and windows — hinged, sliding, retractable, and pet-resistant mesh options for Queensland climate"
 )
 
-[AllSeasonsScreens] -> [Service:Crimsafe] ::mod(
+[AllSeasonsScreens] -> [Service:stainless steel security screens] ::mod(
   confidence=0.95,
   rule="definitional",
-  description="Authorised supplier and installer of Crimsafe — Australia's strongest security screen brand. Regular, Ultimate, and Safe-S-Cape lines with patented Screw-Clamp technology. 10-year warranty."
+  description="Authorised supplier and installer of stainless steel security screens — Australia's strongest security screen brand. Regular, Ultimate, and Safe-S-Cape lines with patented tamper-resistant clamping system."
 )
 
 [AllSeasonsScreens] -> [Service:Blinds] ::mod(
@@ -133,7 +133,7 @@
 # Layer 5: Semantic Relations — Brands
 # ============================================================
 
-[AllSeasonsScreens] -> [Brand:Crimsafe] ::mod(confidence=0.95, rule="empirical", description="Authorised Crimsafe supplier and installer")
+[AllSeasonsScreens] -> [Brand:stainless steel security screens] ::mod(confidence=0.95, rule="empirical", description="Authorised stainless steel security screens supplier and installer")
 [AllSeasonsScreens] -> [Brand:Amplimesh] ::mod(confidence=0.90, rule="empirical", description="Supplies and installs Amplimesh products")
 [AllSeasonsScreens] -> [Brand:ProwlerProof] ::mod(confidence=0.90, rule="empirical", description="Supplies and installs Prowler Proof products")
 [AllSeasonsScreens] -> [Brand:InvisiGard] ::mod(confidence=0.90, rule="empirical", description="Supplies and installs Invisi-Gard products")
@@ -178,7 +178,7 @@
 [AllSeasonsScreens] -> [Value:QualityBrands] ::mod(
   confidence=0.95,
   rule="empirical",
-  description="Supplies top Australian security screen brands: Crimsafe, Amplimesh, Prowler Proof, Invisi-Gard, Secureview"
+  description="Supplies top Australian security screen brands: stainless steel security screens, Amplimesh, Prowler Proof, Invisi-Gard, Secureview"
 )
 
 # ============================================================
@@ -192,11 +192,11 @@
   description="Security screens reduce break-in risk, provide insect protection, natural ventilation, UV protection, child safety, and increase property value"
 )
 
-[Crimsafe:ScrewClamp] -> [ForcedEntryResistance] ::mod(
+[stainless steel security screens:ScrewClamp] -> [ForcedEntryResistance] ::mod(
   rule="causal",
   confidence=0.95,
   strength=0.95,
-  description="Patented Screw-Clamp technology mechanically locks mesh into frame, resisting knife attacks, jemmy bars, and extreme impacts"
+  description="Patented tamper-resistant clamping system mechanically locks mesh into frame, resisting knife attacks, jemmy bars, and extreme impacts"
 )
 
 [QLDClimate] -> [SecurityScreenDemand] ::mod(
